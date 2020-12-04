@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">VideoEdit</string>
+    <string name="request_read_storage_load_video">请求读写手机视频文件</string>
+</resources>

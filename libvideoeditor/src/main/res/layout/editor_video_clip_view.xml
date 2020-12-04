@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:text="0.0"/>
+    <com.forevas.videoeditor.widget.VideoClipBgContainerView
+        android:id="@+id/bg_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="#2f000000">
+        <com.forevas.videoeditor.widget.VideoClipBgView
+            android:id="@+id/clip_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.forevas.videoeditor.widget.VideoClipBgContainerView>
+    <FrameLayout
+        android:id="@+id/ll_fg_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <com.forevas.videoeditor.widget.VideoClipFgView
+            android:id="@+id/clip_fg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

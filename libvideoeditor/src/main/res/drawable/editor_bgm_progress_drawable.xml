@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 定义轨道的背景 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#7F767676" />
+            <corners android:topLeftRadius="2dp"
+                android:topRightRadius="2dp"
+                android:bottomLeftRadius="2dp"
+                android:bottomRightRadius="2dp"/>
+        </shape>
+    </item>
+    <!-- 定义轨道上已完成部分的样式 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="#FFFDD915" />
+                <corners android:topLeftRadius="2dp"
+                    android:topRightRadius="2dp"
+                    android:bottomLeftRadius="2dp"
+                    android:bottomRightRadius="2dp"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <solid android:color="#FFFDD915" />
+                <corners android:topLeftRadius="2dp"
+                    android:topRightRadius="2dp"
+                    android:bottomLeftRadius="2dp"
+                    android:bottomRightRadius="2dp"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FocusImageView">
+        <attr name="focus_focusing_id" format="integer" />
+        <attr name="focus_success_id" format="integer" />
+        <attr name="focus_fail_id" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="RecordSegmentView">
+        <attr name="dot_count" format="integer" />
+        <attr name="dot_color" format="color|reference" />
+        <attr name="line_color" format="color|reference" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="segment_count" format="integer" />
+        <attr name="segment_color" format="color|reference" />
+        <attr name="dot_size" format="dimension" />
+        <attr name="line_size" format="dimension" />
+        <attr name="segment_size" format="dimension" />
+    </declare-styleable>
+</resources>

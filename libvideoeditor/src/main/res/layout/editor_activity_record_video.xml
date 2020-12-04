@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.forevas.videoeditor.widget.CameraView
+        android:id="@+id/mCameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/btn_camera_beauty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/editor_selector_beauty" />
+
+            <ImageView
+                android:id="@+id/btn_camera_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/editor_selector_switch_camera" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/editor_record_close" />
+
+        <com.forevas.videoeditor.widget.FilterNameView
+            android:id="@+id/filter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_container"
+            android:layout_marginBottom="20dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_record_config"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/editor_bg_record_config"
+                android:text="4 section  •  10 second  •  "
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <com.forevas.videoeditor.widget.RecordSegmentView
+                android:id="@+id/record_segment"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:dot_color="@android:color/white"
+                app:dot_count="50"
+                app:dot_size="1dp"
+                app:line_color="@android:color/white"
+                app:line_size="1dp"
+                app:orientation="horizontal"
+                app:segment_color="#FFFDD915"
+                app:segment_count="5"
+                app:segment_size="6dp" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btn_add_local"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:src="@mipmap/editor_add_local_video" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent">
+
+                    <com.forevas.videoeditor.widget.CircularProgressView
+                        android:id="@+id/mCapture"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/editor_bt_capture"
+                        android:clickable="true" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mCapture"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_cancel"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="cancel"
+                            android:textColor="@android:color/white"
+                            android:background="@mipmap/yellow"
+                            android:textSize="12sp"
+                            android:gravity="center"
+
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/tv_finish"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@mipmap/yellow"
+                            android:gravity="center"
+                            android:text="jump it"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            android:visibility="visible"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_free_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="00:00"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btn_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:src="@mipmap/editor_record_back" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <com.forevas.videoeditor.widget.FocusImageView
+            android:id="@+id/focusImageView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            app:focus_fail_id="@mipmap/editor_focus_focus_failed"
+            app:focus_focusing_id="@mipmap/editor_focus_focusing"
+            app:focus_success_id="@mipmap/editor_focus_focused" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/eidtor_record_guide_arrow_left" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/editor_record_guide_hand" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/eidtor_record_guide_arrow_right" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="230dp"
+            android:text=" Swipe left or right to switch filters!"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_guide_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="290dp"
+            android:background="@drawable/editor_bg_record_guide_submit"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:text="I know"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </FrameLayout>
+</FrameLayout>

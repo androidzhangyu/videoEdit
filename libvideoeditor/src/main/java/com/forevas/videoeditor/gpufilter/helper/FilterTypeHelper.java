@@ -1,0 +1,246 @@
+package com.forevas.videoeditor.gpufilter.helper;
+
+
+import com.forevas.videoeditor.R;
+
+public class FilterTypeHelper {
+	
+	public static int FilterType2Color(MagicFilterType filterType){
+		switch (filterType) {
+			case NONE:
+				return R.color.filter_color_grey_light;
+			case WHITECAT:
+			case BLACKCAT:
+			case SUNRISE:
+			case SUNSET:
+				return R.color.filter_color_brown_light;
+			case COOL:
+				return R.color.filter_color_blue_dark;
+			case EMERALD:
+			case EVERGREEN:
+				return R.color.filter_color_blue_dark_dark;
+			case FAIRYTALE:
+				return R.color.filter_color_blue;
+			case ROMANCE:
+			case SAKURA:
+			case WARM:
+				return R.color.filter_color_pink;
+			case AMARO:
+			case BRANNAN:
+			case BROOKLYN:
+			case EARLYBIRD:
+			case FREUD:
+			case HEFE:
+			case HUDSON:
+			case INKWELL:
+			case KEVIN:
+			case LOMO:
+			case N1977:
+			case NASHVILLE:
+			case PIXAR:
+			case RISE:
+			case SIERRA:
+			case SUTRO:
+			case TOASTER2:
+			case VALENCIA:
+			case WALDEN:
+			case XPROII:
+				return R.color.filter_color_brown_dark;
+			case ANTIQUE:
+			case NOSTALGIA:
+				return R.color.filter_color_green_dark;
+			case SKINWHITEN:
+			case HEALTHY:
+				return R.color.filter_color_red;
+			case SWEETS:
+				return R.color.filter_color_red_dark;
+			case CALM:
+			case LATTE:
+			case TENDER:
+				return R.color.filter_color_brown;
+			default:
+				return R.color.filter_color_grey_light;
+		}
+	}
+	
+	public static int FilterType2Name(MagicFilterType filterType){
+		switch (filterType) {
+		case NONE:
+			return R.string.filter_none;
+		case WHITECAT:
+			return R.string.filter_whitecat;
+		case BLACKCAT:
+			return R.string.filter_blackcat;
+		case ROMANCE:
+			return R.string.filter_romance;
+		case SAKURA:
+			return R.string.filter_sakura;
+		case AMARO:
+			return R.string.filter_amaro;
+		case BRANNAN:
+			return R.string.filter_brannan;
+		case BROOKLYN:
+			return R.string.filter_brooklyn;
+		case EARLYBIRD:
+			return R.string.filter_Earlybird;
+		case FREUD:
+			return R.string.filter_freud;
+		case HEFE:
+			return R.string.filter_hefe;
+		case HUDSON:
+			return R.string.filter_hudson;
+		case INKWELL:
+			return R.string.filter_inkwell;
+		case KEVIN:
+			return R.string.filter_kevin;
+		case LOMO:
+			return R.string.filter_lomo;
+		case N1977:
+			return R.string.filter_n1977;
+		case NASHVILLE:
+			return R.string.filter_nashville;
+		case PIXAR:
+			return R.string.filter_pixar;
+		case RISE:
+			return R.string.filter_rise;
+		case SIERRA:
+			return R.string.filter_sierra;
+		case SUTRO:
+			return R.string.filter_sutro;
+		case TOASTER2:
+			return R.string.filter_toastero;
+		case VALENCIA:
+			return R.string.filter_valencia;
+		case WALDEN:
+			return R.string.filter_walden;
+		case XPROII:
+			return R.string.filter_xproii;
+		case ANTIQUE:
+			return R.string.filter_antique;
+		case CALM:
+			return R.string.filter_calm;
+		case COOL:
+			return R.string.filter_cool;
+		case EMERALD:
+			return R.string.filter_emerald;
+		case EVERGREEN:
+			return R.string.filter_evergreen;
+		case FAIRYTALE:
+			return R.string.filter_fairytale;
+		case HEALTHY:
+			return R.string.filter_healthy;
+		case NOSTALGIA:
+			return R.string.filter_nostalgia;
+		case TENDER:
+			return R.string.filter_tender;
+		case SWEETS:
+			return R.string.filter_sweets;
+		case LATTE:
+			return R.string.filter_latte;
+		case WARM:
+			return R.string.filter_warm;
+		case SUNRISE:
+			return R.string.filter_sunrise;
+		case SUNSET:
+			return R.string.filter_sunset;
+		case SKINWHITEN:
+			return R.string.filter_skinwhiten;
+		case CRAYON:
+			return R.string.filter_crayon;
+		case SKETCH:
+			return R.string.filter_sketch;
+		default:
+			return R.string.filter_none;
+		}
+	}
+	public static int FilterType2CnName(MagicFilterType filterType){
+		switch (filterType) {
+			case NONE:
+				return R.string.filter_none_cn;
+			case WHITECAT:
+				return R.string.filter_whitecat_cn;
+			case BLACKCAT:
+				return R.string.filter_blackcat_cn;
+			case ROMANCE:
+				return R.string.filter_romance_cn;
+			case SAKURA:
+				return R.string.filter_sakura_cn;
+			case AMARO:
+				return R.string.filter_amaro_cn;
+			case BRANNAN:
+				return R.string.filter_brannan_cn;
+			case BROOKLYN:
+				return R.string.filter_brooklyn_cn;
+			case EARLYBIRD:
+				return R.string.filter_Earlybird_cn;
+			case FREUD:
+				return R.string.filter_freud_cn;
+			case HEFE:
+				return R.string.filter_hefe_cn;
+			case HUDSON:
+				return R.string.filter_hudson_cn;
+			case INKWELL:
+				return R.string.filter_inkwell_cn;
+			case KEVIN:
+				return R.string.filter_kevin_cn;
+			case LOMO:
+				return R.string.filter_lomo_cn;
+			case N1977:
+				return R.string.filter_n1977_cn;
+			case NASHVILLE:
+				return R.string.filter_nashville_cn;
+			case PIXAR:
+				return R.string.filter_pixar_cn;
+			case RISE:
+				return R.string.filter_rise_cn;
+			case SIERRA:
+				return R.string.filter_sierra_cn;
+			case SUTRO:
+				return R.string.filter_sutro_cn;
+			case TOASTER2:
+				return R.string.filter_toastero_cn;
+			case VALENCIA:
+				return R.string.filter_valencia_cn;
+			case WALDEN:
+				return R.string.filter_walden_cn;
+			case XPROII:
+				return R.string.filter_xproii_cn;
+			case ANTIQUE:
+				return R.string.filter_antique_cn;
+			case CALM:
+				return R.string.filter_calm_cn;
+			case COOL:
+				return R.string.filter_cool_cn;
+			case EMERALD:
+				return R.string.filter_emerald_cn;
+			case EVERGREEN:
+				return R.string.filter_evergreen_cn;
+			case FAIRYTALE:
+				return R.string.filter_fairytale_cn;
+			case HEALTHY:
+				return R.string.filter_healthy_cn;
+			case NOSTALGIA:
+				return R.string.filter_nostalgia_cn;
+			case TENDER:
+				return R.string.filter_tender_cn;
+			case SWEETS:
+				return R.string.filter_sweets_cn;
+			case LATTE:
+				return R.string.filter_latte_cn;
+			case WARM:
+				return R.string.filter_warm_cn;
+			case SUNRISE:
+				return R.string.filter_sunrise_cn;
+			case SUNSET:
+				return R.string.filter_sunset_cn;
+			case SKINWHITEN:
+				return R.string.filter_skinwhiten_cn;
+			case CRAYON:
+				return R.string.filter_crayon_cn;
+			case SKETCH:
+				return R.string.filter_sketch_cn;
+			default:
+				return R.string.filter_none_cn;
+		}
+	}
+}
